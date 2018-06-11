@@ -1,27 +1,27 @@
 > **Pair programming exercise**
->
-> * Fork and clone repo
-> * Write a solution to each exercise and a corresponding test which ensures correctness of solution
-> * Try to write the test before writing the solution. This will force you to think closely about the task
-> * One person should be writing the test and another the solution. Alternate roles after each exercise
-> * For some tests you may have to write several test cases to make sure all edge cases are covered
-> * Run `npm test` regularly to ensure your tests pass
-> * Commit and push after each solution created
-> * Create a pull request after first push
->
+
+<!-- > * Fork and clone repo -->
+
+> - Write a solution to each exercise and a corresponding test which ensures correctness of solution
+> - Try to write the test before writing the solution. This will force you to think closely about the task
+> - One person should be writing the test and another the solution. Alternate roles after each exercise
+> - For some tests you may have to write several test cases to make sure all edge cases are covered
+> - Run `npm test` regularly to ensure your tests pass
+> - Commit and push after each solution created
+> - Create a pull request after first push
 >
 > * `longestString` - Write a function which receives an array of strings. It should return the longest string from the array
 >
 > * `l337` Write a function which receives a string. It should replace all instances of letters below with corresponding number and return the resulting string
->   1. `i` or `l` with number 1
->   2. `z` with the number 2
->   3. `e` with number 3
->   4. `a` with number 4
->   5. `s` with number 5
->   6. `g` with number 6
->   7. `t` or `y` with number 7
->   8. `b` with number 8
->   9. `q` with number 9
+>   1.  `i` or `l` with number 1
+>   2.  `z` with the number 2
+>   3.  `e` with number 3
+>   4.  `a` with number 4
+>   5.  `s` with number 5
+>   6.  `g` with number 6
+>   7.  `t` or `y` with number 7
+>   8.  `b` with number 8
+>   9.  `q` with number 9
 >   10. `o` with number 0
 > * `uniqueStrings` - Write a function which receives an array of strings. It should return an array of unique strings from the input array
 > * `developer` - Write a function a constructor called `Developer` which receives 2 parameters an input string containing name and an array of programming languages the developer knows

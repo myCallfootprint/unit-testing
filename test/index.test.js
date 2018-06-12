@@ -66,10 +66,10 @@ test("Garden", function() {
   expect(result).toEqual(expected);
 });
 
-// test.only("Garden", function() {
-//   const garden = new Garden({ rose: 3, poppy: 6, tulip: 1 });
-//   garden.harvest({ poppy: 4, rose: 3 });
-//   const expected = { poppy: 2, tulip: 1 };
-//   const result = garden;
-//   expect(result).toEqual(expected);
-// });
+test.only("Garden", function() {
+  const garden = new Garden({ rose: 3, poppy: 6, tulip: 1 });
+  garden.harvest({ poppy: 4, rose: 3 });
+  const expected = { poppy: 2, tulip: 1 };
+  const result = garden;
+  expect(result).toEqual(expected);
+});

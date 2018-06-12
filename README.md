@@ -35,6 +35,7 @@
 <!-- > - `extend` - using prototypal inheritance add a method called `plant` which receives an object of plants and corresponding quantities as keys and adds them to current stock -->
 
 > - `harvest` - using prototypal inheritance add a method called harvest to garden. It should receive and object which contains plant names as keys and quantities to harvest as values. Reduce the quantity of existing plants in garden by the number of plants to be harvested. If number of certain plant falls to 0 or below. Remove key from corresponding object
+
 > - `stringsConcat` - Write a function which receives an array of strings and numbers. The function should concatenate all strings and return the resulting string.
 > - `negativeOnly` - Write a function which receives one array of positive and negative numbers. It should return an array containing only the negative numbers
 > - `camelise` - Write a function which receive a string of lower case, space separated words. It should convert the string to camel case. That is capitalise the first letter of every word except the first and remove all spaces

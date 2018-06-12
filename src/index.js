@@ -40,6 +40,8 @@ function l337(str) {
 
 module.exports.l337 = l337;
 
+// Write a function which receives an array of strings.
+// It should return an array of unique strings from the input array
 function uniqueStrings(arr) {
   const output = [];
   arr.forEach(function(item) {
@@ -52,26 +54,56 @@ function uniqueStrings(arr) {
 
 module.exports.uniqueStrings = uniqueStrings;
 
+// Write a function constructor called `Developer` which
+// receives 2 parameters an input string containing name
+// and an array of programming languages the developer knows
 function Developer(name, progLanguages) {
   this.name = name;
   this.progLanguages = progLanguages;
 }
 
-module.exports.Developer = Developer;
-
+// using prototypal inheritance add a function called learn
+// language, which accepts a new language in string format
+// and adds it to array of programming languages the developer knows.
+// The values in array should be unique
 Developer.prototype.learnLanguage = function(newLang) {
   if (this.progLanguages.indexOf(newLang) === -1) {
     this.progLanguages.push(newLang);
   }
 };
+module.exports.Developer = Developer;
 
+// create a constructor called Garden. It should receive an
+// object as input which contains names of plants as keys
+// and numbers as corresponding quantities as values
 function Garden(plants) {
   Object.keys(plants).forEach(plant => (this[plant] = plants[plant]));
 }
-module.exports.Garden = Garden;
-
+// using prototypal inheritance add a method called `plant`
+// which receives an object of plants and corresponding
+// quantities as keys and adds them to current stock
 Garden.prototype.plant = function(newPlantsList) {
   Object.keys(newPlantsList).forEach(item => {
     this[item] = newPlantsList[item];
   });
 };
+
+// Using prototypal inheritance add a method called harvest to garden.
+// It should receive and object which contains plant names as keys
+// and quantities to harvest as values.
+// Reduce the quantity of existing plants in garden by the number of
+// plants to be harvested. If number of certain plant falls to 0 or below.
+// Remove key from corresponding object
+Garden.prototype.harvest = function(plantsToHarvest) {
+  Object.keys(plantsToHarvest).forEach(plant => {
+    if (!this[plant]) {
+      console.log(`We are not growing '${plant}' a the moment.`);
+      return;
+    }
+    this[plant] - plantsToHarvest[plant] <= 0
+      ? delete this[plant]
+      : (this[plant] -= plantsToHarvest[plant]);
+  });
+};
+
+module.exports.Garden = Garden;

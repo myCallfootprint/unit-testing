@@ -119,3 +119,41 @@ function stringsConcat(arr) {
 }
 
 module.exports.stringsConcat = stringsConcat;
+
+// `negativeOnly` - Write a function which receives one array
+// of positive and negative numbers. It should return an array
+// containing only the negative numbers
+
+function negativeOnly(arr) {
+  return arr.filter(item => item < 0);
+}
+
+module.exports.negativeOnly = negativeOnly;
+
+// `camelise` - Write a function which receive a
+// string of lower case, space separated words.
+// It should convert the string to camel case.
+// That is capitalise the first letter of every
+// word except the first and remove all spaces
+
+// String method
+function camelise(str) {
+  return str.replace(/\s\S/gi, function(match) {
+    return match.trim().toUpperCase();
+  });
+}
+
+// Array method
+// function camelise(str) {
+//   const counter = 0;
+
+//   str.split(" ").map(function(item, index) {
+//     if () {
+//       console.log(item);
+//       const firstLetter = item.split("");
+//       firstLetter.toUpperCase();
+//     }
+//   });
+// }
+module.exports.camelise = camelise;
+// camelise("function which receive a string of lower case");

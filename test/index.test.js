@@ -4,7 +4,9 @@ const {
   uniqueStrings,
   Developer,
   Garden,
-  stringsConcat
+  stringsConcat,
+  negativeOnly,
+  camelise
 } = require("../src/index.js");
 
 // test('Addition', function(){
@@ -75,7 +77,7 @@ test("Garden", function() {
   expect(result).toEqual(expected);
 });
 
-test.only("stringsConcat", function() {
+test("stringsConcat", function() {
   const expected = "This is a concatenated string";
   const result = stringsConcat([
     "This",
@@ -87,5 +89,17 @@ test.only("stringsConcat", function() {
     "concatenated",
     "string"
   ]);
+  expect(result).toEqual(expected);
+});
+
+test("negativeOnly", function() {
+  const expected = [-2, -1, -3];
+  const result = negativeOnly([1, -2, 3, -1, -3, 2]);
+  expect(result).toEqual(expected);
+});
+
+test.only("cameLise", function() {
+  const expected = "functionWhichReceiveAStringOfLowerCase";
+  const result = camelise("function which receive a string of lower case");
   expect(result).toEqual(expected);
 });

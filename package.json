@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "test:w": "npm run test -- --watch"
   },
   "author": "",
   "license": "ISC",

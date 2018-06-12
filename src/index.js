@@ -51,3 +51,22 @@ function uniqueStrings(arr) {
 }
 
 module.exports.uniqueStrings = uniqueStrings;
+
+function Developer(name, progLanguages) {
+  this.name = name;
+  this.progLanguages = progLanguages;
+}
+
+module.exports.Developer = Developer;
+
+Developer.prototype.learnLanguage = function(newLang) {
+  if (this.progLanguages.indexOf(newLang) === -1) {
+    this.progLanguages.push(newLang);
+  }
+};
+
+function Garden(plants) {
+  this.plants = plants;
+}
+
+module.exports.Garden = Garden;

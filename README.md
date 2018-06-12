@@ -24,10 +24,14 @@
 >   9.  `q` with number 9
 >   10. `o` with number 0 -->
 
-> - `uniqueStrings` - Write a function which receives an array of strings. It should return an array of unique strings from the input array
-> - `developer` - Write a function a constructor called `Developer` which receives 2 parameters an input string containing name and an array of programming languages the developer knows
-> - `inherit` - using prototypal inheritance add a function called learn language, which accepts a new language in string format and adds it to array of programming languages the developer knows. The values in array should be unique
-> - `garden` - create a constructor called Garden. It should receive an object as input which contains names of plants as keys and numbers as corresponding quantities as values
+<!-- > - `uniqueStrings` - Write a function which receives an array of strings. It should return an array of unique strings from the input array -->
+
+<!-- > - `developer` - Write a function constructor called `Developer` which receives 2 parameters an input string containing name and an array of programming languages the developer knows -->
+
+<!-- > - `inherit` - using prototypal inheritance add a function called learn language, which accepts a new language in string format and adds it to array of programming languages the developer knows. The values in array should be unique -->
+
+<!-- > - `garden` - create a constructor called Garden. It should receive an object as input which contains names of plants as keys and numbers as corresponding quantities as values -->
+
 > - `extend` - using prototypal inheritance add a method called `plant` which receives an object of plants and corresponding quantities as keys and adds them to current stock
 > - `harvest` - using prototypal inheritance add a method called harvest to garden. It should receive and object which contains plant names as keys and quantities to harvest as values. Reduce the quantity of existing plants in garden by the number of plants to be harvested. If number of certain plant falls to 0 or below. Remove key from corresponding object
 > - `stringsConcat` - Write a function which receives an array of strings and numbers. The function should concatenate all strings and return the resulting string.

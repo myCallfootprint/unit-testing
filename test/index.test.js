@@ -1,4 +1,10 @@
-const { longestString, l337, uniqueStrings } = require("../src/index.js");
+const {
+  longestString,
+  l337,
+  uniqueStrings,
+  Developer,
+  Garden
+} = require("../src/index.js");
 
 // test('Addition', function(){
 //   const expected = 5;
@@ -18,8 +24,43 @@ test("l337", function() {
   expect(result).toBe(expected);
 });
 
-test.only("uniqueStrings", function() {
+test("uniqueStrings", function() {
   const expected = ["one", "two", "three", "four"];
   const result = uniqueStrings(["one", "two", "one", "two", "three", "four"]);
+  expect(result).toEqual(expected);
+});
+
+// test("Developer", function() {
+//   const developer = new Developer("ralph", ["html", "css", "javascript"]);
+//   const expected = {
+//     name: "ralph",
+//     progLanguages: ["html", "css", "javascript"]
+//   };
+//   const result = developer;
+//   expect(result).toEqual(expected);
+// });
+
+test("Developer", function() {
+  const developer = new Developer("ralph", ["html", "css", "javascript"]);
+  developer.learnLanguage("python");
+  developer.learnLanguage("css");
+  const expected = {
+    name: "ralph",
+    progLanguages: ["html", "css", "javascript", "python"]
+  };
+  const result = developer;
+  expect(result).toEqual(expected);
+});
+
+test("Garden", function() {
+  const garden = new Garden({ rose: 3, poopy: 2, tulip: 1 });
+  const expected = {
+    plants: {
+      rose: 3,
+      poopy: 2,
+      tulip: 1
+    }
+  };
+  const result = garden;
   expect(result).toEqual(expected);
 });

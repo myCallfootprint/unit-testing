@@ -12,7 +12,7 @@
 
 <!-- > * `longestString` - Write a function which receives an array of strings. It should return the longest string from the array -->
 
-> - `l337` Write a function which receives a string. It should replace all instances of letters below with corresponding number and return the resulting string
+<!-- > - `l337` Write a function which receives a string. It should replace all instances of letters below with corresponding number and return the resulting string
 >   1.  `i` or `l` with number 1
 >   2.  `z` with the number 2
 >   3.  `e` with number 3
@@ -22,7 +22,8 @@
 >   7.  `t` or `y` with number 7
 >   8.  `b` with number 8
 >   9.  `q` with number 9
->   10. `o` with number 0
+>   10. `o` with number 0 -->
+
 > - `uniqueStrings` - Write a function which receives an array of strings. It should return an array of unique strings from the input array
 > - `developer` - Write a function a constructor called `Developer` which receives 2 parameters an input string containing name and an array of programming languages the developer knows
 > - `inherit` - using prototypal inheritance add a function called learn language, which accepts a new language in string format and adds it to array of programming languages the developer knows. The values in array should be unique

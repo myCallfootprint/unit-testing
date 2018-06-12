@@ -39,3 +39,15 @@ function l337(str) {
 }
 
 module.exports.l337 = l337;
+
+function uniqueStrings(arr) {
+  const output = [];
+  arr.forEach(function(item) {
+    if (output.indexOf(item) === -1) {
+      output.push(item);
+    }
+  });
+  return output;
+}
+
+module.exports.uniqueStrings = uniqueStrings;

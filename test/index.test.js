@@ -1,4 +1,4 @@
-const { longestString, l337 } = require("../src/index.js");
+const { longestString, l337, uniqueStrings } = require("../src/index.js");
 
 // test('Addition', function(){
 //   const expected = 5;
@@ -12,8 +12,14 @@ test("longestString", function() {
   expect(result).toBe(expected);
 });
 
-test.only("l337", function() {
+test("l337", function() {
   const expected = "h4pp7";
   const result = l337("happy");
   expect(result).toBe(expected);
+});
+
+test.only("uniqueStrings", function() {
+  const expected = ["one", "two", "three", "four"];
+  const result = uniqueStrings(["one", "two", "one", "two", "three", "four"]);
+  expect(result).toEqual(expected);
 });

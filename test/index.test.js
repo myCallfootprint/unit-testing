@@ -3,7 +3,8 @@ const {
   l337,
   uniqueStrings,
   Developer,
-  Garden
+  Garden,
+  stringsConcat
 } = require("../src/index.js");
 
 // test('Addition', function(){
@@ -66,10 +67,25 @@ test("Garden", function() {
   expect(result).toEqual(expected);
 });
 
-test.only("Garden", function() {
+test("Garden", function() {
   const garden = new Garden({ rose: 3, poppy: 6, tulip: 1 });
   garden.harvest({ poppy: 4, rose: 3 });
   const expected = { poppy: 2, tulip: 1 };
   const result = garden;
+  expect(result).toEqual(expected);
+});
+
+test.only("stringsConcat", function() {
+  const expected = "This is a concatenated string";
+  const result = stringsConcat([
+    "This",
+    9.78,
+    "is",
+    99,
+    "a",
+    79,
+    "concatenated",
+    "string"
+  ]);
   expect(result).toEqual(expected);
 });

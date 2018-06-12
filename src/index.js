@@ -107,3 +107,15 @@ Garden.prototype.harvest = function(plantsToHarvest) {
 };
 
 module.exports.Garden = Garden;
+
+// Write a function which receives an array of strings and numbers.
+// The function should concatenate all strings and return the resulting string.
+function stringsConcat(arr) {
+  return arr
+    .filter(function(item) {
+      return typeof item === "string";
+    })
+    .join(" ");
+}
+
+module.exports.stringsConcat = stringsConcat;

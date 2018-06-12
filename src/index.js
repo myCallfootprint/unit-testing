@@ -66,7 +66,6 @@ Developer.prototype.learnLanguage = function(newLang) {
 };
 
 function Garden(plants) {
-  this.plants = plants;
+  Object.keys(plants).forEach(plant => (this[plant] = plants[plant]));
 }
-
 module.exports.Garden = Garden;

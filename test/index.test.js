@@ -55,11 +55,9 @@ test("Developer", function() {
 test("Garden", function() {
   const garden = new Garden({ rose: 3, poopy: 2, tulip: 1 });
   const expected = {
-    plants: {
-      rose: 3,
-      poopy: 2,
-      tulip: 1
-    }
+    rose: 3,
+    poopy: 2,
+    tulip: 1
   };
   const result = garden;
   expect(result).toEqual(expected);

@@ -53,12 +53,23 @@ test("Developer", function() {
 });
 
 test("Garden", function() {
-  const garden = new Garden({ rose: 3, poopy: 2, tulip: 1 });
+  const garden = new Garden({ rose: 3, poppy: 2, tulip: 1 });
+  garden.plant({ violet: 7, "english rose": 4 });
   const expected = {
     rose: 3,
-    poopy: 2,
-    tulip: 1
+    poppy: 2,
+    tulip: 1,
+    violet: 7,
+    "english rose": 4
   };
   const result = garden;
   expect(result).toEqual(expected);
 });
+
+// test.only("Garden", function() {
+//   const garden = new Garden({ rose: 3, poppy: 6, tulip: 1 });
+//   garden.harvest({ poppy: 4, rose: 3 });
+//   const expected = { poppy: 2, tulip: 1 };
+//   const result = garden;
+//   expect(result).toEqual(expected);
+// });

@@ -32,7 +32,7 @@
 
 <!-- > - `garden` - create a constructor called Garden. It should receive an object as input which contains names of plants as keys and numbers as corresponding quantities as values -->
 
-> - `extend` - using prototypal inheritance add a method called `plant` which receives an object of plants and corresponding quantities as keys and adds them to current stock
+<!-- > - `extend` - using prototypal inheritance add a method called `plant` which receives an object of plants and corresponding quantities as keys and adds them to current stock -->
 
 > - `harvest` - using prototypal inheritance add a method called harvest to garden. It should receive and object which contains plant names as keys and quantities to harvest as values. Reduce the quantity of existing plants in garden by the number of plants to be harvested. If number of certain plant falls to 0 or below. Remove key from corresponding object
 > - `stringsConcat` - Write a function which receives an array of strings and numbers. The function should concatenate all strings and return the resulting string.

@@ -69,3 +69,9 @@ function Garden(plants) {
   Object.keys(plants).forEach(plant => (this[plant] = plants[plant]));
 }
 module.exports.Garden = Garden;
+
+Garden.prototype.plant = function(newPlantsList) {
+  Object.keys(newPlantsList).forEach(item => {
+    this[item] = newPlantsList[item];
+  });
+};

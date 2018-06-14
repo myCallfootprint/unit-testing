@@ -15,9 +15,9 @@ const {
 //   expect(result).toBe(expected);
 // });
 
-test("longestString", function() {
+test.only("longestString", function() {
   const expected = "longest";
-  const result = longestString(["longest", "longes", "longe", "long"]);
+  const result = longestString(["longes", "longest", "longe", "long"]);
   expect(result).toBe(expected);
 });
 
